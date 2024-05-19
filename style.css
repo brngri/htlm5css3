@@ -5,11 +5,37 @@
     validação: W3c
 */
 
+/* Layout */
+.Container{
+    margin: 0 auto;
+    background-color: #77ff00;
+}
+
+/* importação (Google fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body{
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+}
+
+/* CSS Reset */
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
 /* Smartphone Portrait >>>>>>>>>>>*/
+
 /* Smartphone Landscape >>>>>>>>>>*/
 @media (min-width: 576px) {
     body{
         background-color: #00ffff;
+    }
+    /* Layout */
+    .Container {
+        max-width: 540px;
     }
 }
 /* Tablet Portrait >>>>>>>>>>>>>>>*/
@@ -17,16 +43,28 @@
     body{
         background-color: #fff00f;
     }
+    /* Layout */
+    .Container {
+        max-width: 720px;
+    }
 }
 /* Tablet Landscape >>>>>>>>>>>>>>*/
 @media (min-width: 992px) {
     body{
         background-color: #ff6600;
     }
+    /* Layout */
+    .Container {
+        max-width: 960px;
+    }
 }
 /* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 1200px) {
     body{
         background-color: #00a2ff;
+    }
+    /* Layout */
+    .Container {
+        max-width: 1140px;
     }
 }
