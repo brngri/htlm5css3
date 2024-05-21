@@ -5,32 +5,45 @@
     validação: W3c
 */
 
+/* importação (Google fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 /* Topo do site */
 #topo {
     position: fixed;
     right: 10px;
     bottom: 10px;
 }
+
 /* Layout */
-.Container{
+.Container {
     margin: 0 auto;
 }
 
-.Flex{
+.Flex {
     display: flex;
     justify-content: space-between;
 }
 
-/* importação (Google fonts) */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+.Botao {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 700;
+    background-color: #c0000c;
+    padding: 10px 40px;
+    /*cima=baixo direita=esquerda*/
+    border: 2px solid #fff;
+    border-radius: 25px;
+}
 
-body{
-  font-family: "Open Sans", sans-serif;
-  font-size: 1em;
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
 }
 
 /* CSS Reset */
-*{
+* {
     margin: 0;
     border: 0;
     padding: 0;
@@ -39,48 +52,78 @@ body{
 /* Smartphone Portrait >>>>>>>>>>>*/
 
 /* Cabeçalho */
-header{
+header {
     height: 60px;
 
 }
 
-#logo img{
+#logo img {
 
-    width: 128;
-    height: 128;
+    width: 128px;
+    height: 128px;
 }
 
-#check{
+#check {
     display: none;
 }
 
-label{
+label {
     font-size: 3em;
 }
 
-nav ul{
-    list-style: none; /*tira o estilo*/
+nav ul {
+    list-style: none;
+    /*tira o estilo*/
     background-color: #343538;
     height: 100vh;
     position: fixed;
     padding-right: 15px;
     top: 60px;
-    right: -100%; /* Efeito menu */
+    right: -100%;
+    /* Efeito menu */
     transition: all 0.5s;
 }
 
-#check:checked ~ ul{ /* Efeito menu */
+#check:checked~ul {
+    /* Efeito menu */
     right: 0;
 }
 
-nav ul li{
-    padding: 20px; /*espaço entre*/
+nav ul li {
+    padding: 20px;
+    /*espaço entre*/
     border-bottom: 1px solid #a9a9a9;
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     color: #fff;
+}
+
+/* Destaque */
+main {
+    height: 75vh;
+    /* vh =  porcentagem de tela, independente do dispositivo*/
+    background: url(img/banner.jpg);
+    background-size: cover;
+    /* Ajusta ao tamnho do dispositivo */
+    color: #fff;
+    /* centralizando */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+
+main h1 {
+    font-size: 2.5em;
+}
+
+main h2 {
+    font-size: 1em;
+    margin: 20px 0px 50px 0px;
+    /* sentido horário */
 }
 
 /* Smartphone Landscape >>>>>>>>>>*/
@@ -90,7 +133,13 @@ nav ul li a{
     .Container {
         max-width: 540px;
     }
+
+    /* Destaque */
+    main h1, main h2{
+        text-shadow: #000 0.05em 0.05em 0.05em;
+    }
 }
+
 /* Tablet Portrait >>>>>>>>>>>>>>>*/
 @media (min-width: 768px) {
 
@@ -98,39 +147,60 @@ nav ul li a{
     .Container {
         max-width: 720px;
     }
+
+    /* Destaque */
+    main{
+        height: 45vh;
+    }
+
+    main h1{
+        font-size: 5.5em;
+
+    }
+
+    main h2{
+        font-size: 2em;
+    }
 }
+
 /* Tablet Landscape >>>>>>>>>>>>>>*/
 @media (min-width: 992px) {
-    
+
     /* Layout */
     .Container {
         max-width: 960px;
     }
+
+    /* Destaque */
+    main{
+        height: 70vh;
+    }
 }
+
 /* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 1200px) {
-    
+
     /* Layout */
     .Container {
         max-width: 1140px;
     }
 
     /* Cabeçalho */
-    header{
+    header {
         height: 120px;
     }
 
-    #logo img{
+    #logo img {
         width: 200px;
         height: 200px;
         margin-top: 30px;
     }
 
-    label{
+    label {
         display: none;
     }
 
-    nav ul{
+    nav ul {
         position: static;
         height: auto;
         background-color: transparent;
@@ -139,16 +209,16 @@ nav ul li a{
 
     }
 
-    nav ul li{
+    nav ul li {
         float: left;
         border: 0;
     }
 
-    nav ul li a{
+    nav ul li a {
         color: #343538;
     }
 
-    nav ul li a:hover{
+    nav ul li a:hover {
         color: #c00000;
     }
 }
