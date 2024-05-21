@@ -14,7 +14,11 @@
 /* Layout */
 .Container{
     margin: 0 auto;
-    background-color: #dcdcdc;
+}
+
+.Flex{
+    display: flex;
+    justify-content: space-between;
 }
 
 /* importação (Google fonts) */
@@ -34,11 +38,54 @@ body{
 
 /* Smartphone Portrait >>>>>>>>>>>*/
 
+/* Cabeçalho */
+header{
+    height: 60px;
+
+}
+
+#logo img{
+
+    width: 128;
+    height: 128;
+}
+
+#check{
+    display: none;
+}
+
+label{
+    font-size: 3em;
+}
+
+nav ul{
+    list-style: none; /*tira o estilo*/
+    background-color: #343538;
+    height: 100vh;
+    position: fixed;
+    padding-right: 15px;
+    top: 60px;
+    right: -100%; /* Efeito menu */
+    transition: all 0.5s;
+}
+
+#check:checked ~ ul{ /* Efeito menu */
+    right: 0;
+}
+
+nav ul li{
+    padding: 20px; /*espaço entre*/
+    border-bottom: 1px solid #a9a9a9;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
 /* Smartphone Landscape >>>>>>>>>>*/
 @media (min-width: 576px) {
-    body{
-        background-color: #00ffff;
-    }
+
     /* Layout */
     .Container {
         max-width: 540px;
@@ -46,9 +93,7 @@ body{
 }
 /* Tablet Portrait >>>>>>>>>>>>>>>*/
 @media (min-width: 768px) {
-    body{
-        background-color: #fff00f;
-    }
+
     /* Layout */
     .Container {
         max-width: 720px;
@@ -56,9 +101,7 @@ body{
 }
 /* Tablet Landscape >>>>>>>>>>>>>>*/
 @media (min-width: 992px) {
-    body{
-        background-color: #ff6600;
-    }
+    
     /* Layout */
     .Container {
         max-width: 960px;
@@ -66,11 +109,46 @@ body{
 }
 /* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 1200px) {
-    body{
-        background-color: #00a2ff;
-    }
+    
     /* Layout */
     .Container {
         max-width: 1140px;
+    }
+
+    /* Cabeçalho */
+    header{
+        height: 120px;
+    }
+
+    #logo img{
+        width: 200px;
+        height: 200px;
+        margin-top: 30px;
+    }
+
+    label{
+        display: none;
+    }
+
+    nav ul{
+        position: static;
+        height: auto;
+        background-color: transparent;
+        margin-top: 50px;
+        margin-right: 350px;
+
+    }
+
+    nav ul li{
+        float: left;
+        border: 0;
+    }
+
+    nav ul li a{
+        color: #343538;
+    }
+
+    nav ul li a:hover{
+        color: #c00000;
     }
 }
