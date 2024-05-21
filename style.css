@@ -5,6 +5,12 @@
     validação: W3c
 */
 
+/* Topo do site */
+#topo {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
 /* Layout */
 .Container{
     margin: 0 auto;
