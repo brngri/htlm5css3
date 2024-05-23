@@ -3,6 +3,9 @@
 Site One page
 
 ## Links indicados
+### Validação W3C
+[w3c](https://validator.w3.org)
+
 ### Planejamento
 [cetic](https://cetic.br)
 
