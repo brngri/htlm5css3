@@ -35,6 +35,12 @@
     flex-direction: column;
 }
 
+.Flex4{ /* para cartões */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 .Botao {
     text-decoration: none;
     color: #fff;
@@ -50,6 +56,36 @@
 body {
     font-family: "Open Sans", sans-serif;
     font-size: 1em;
+}
+
+/* Cartões */
+.Card{
+    margin-top: 25px;
+    width: 338px; /* imagens devem ter essa largura e pelo menos a metade da altura*/
+    height: 520px;
+    background-color: #e8e8e8;
+    border: 1px solid #a1a1a1;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.Card img{
+    border-radius: 25px 25px 0px 0px;
+}
+
+.Card h3{
+    margin-top: 15px;
+}
+
+.Card p{
+    text-align: left;
+    color: #434343;
+    padding: 10px 30px 50px 30px;
+}
+
+.Card a{
+    padding: 10px 100px; /*cima-baixo direita-esquerda*/
+    border: 0;
 }
 
 /* CSS Reset */
@@ -218,6 +254,28 @@ main h2 {
 
 #qrcode{
     display: none;
+}
+
+/* Conteúdo */
+#conteudo{
+    padding: 50px 0px;
+}
+
+#conteudo h2{
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#todos{
+    margin-top: 50px;
+    text-align: center;
+}
+
+#todos a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    font-size: 1.25em;
 }
 
 /* Smartphone Landscape >>>>>>>>>>*/
