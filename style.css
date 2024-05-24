@@ -25,20 +25,32 @@
     justify-content: space-between;
 }
 
-.Flex2{
+.Flex2 {
     display: flex;
     align-items: center;
 }
 
-.Flex3{
+.Flex3 {
     display: flex;
     flex-direction: column;
 }
 
-.Flex4{ /* para cartões */
+.Flex4 {
+    /* para cartões */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+.Flex5 {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.Flex6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .Botao {
@@ -59,9 +71,10 @@ body {
 }
 
 /* Cartões */
-.Card{
+.Card {
     margin-top: 25px;
-    width: 338px; /* imagens devem ter essa largura e pelo menos a metade da altura*/
+    width: 338px;
+    /* imagens devem ter essa largura e pelo menos a metade da altura*/
     height: 520px;
     background-color: #e8e8e8;
     border: 1px solid #a1a1a1;
@@ -69,22 +82,23 @@ body {
     text-align: center;
 }
 
-.Card img{
+.Card img {
     border-radius: 25px 25px 0px 0px;
 }
 
-.Card h3{
+.Card h3 {
     margin-top: 15px;
 }
 
-.Card p{
+.Card p {
     text-align: left;
     color: #434343;
     padding: 10px 30px 50px 30px;
 }
 
-.Card a{
-    padding: 10px 100px; /*cima-baixo direita-esquerda*/
+.Card a {
+    padding: 10px 100px;
+    /*cima-baixo direita-esquerda*/
     border: 0;
 }
 
@@ -118,7 +132,7 @@ label {
     position: fixed;
     top: 5px;
     right: 15px;
-    color: rgba(0,0,0,0.5)
+    color: rgba(0, 0, 0, 0.5)
 }
 
 nav ul {
@@ -156,7 +170,8 @@ main {
     /* vh =  porcentagem de tela, independente do dispositivo*/
     background: url(img/banner.jpg);
     background-size: cover;
-    background-position: center; /* Centraliza a img do back */
+    background-position: center;
+    /* Centraliza a img do back */
     /* Ajusta ao tamnho do dispositivo */
     color: #fff;
     /* centralizando */
@@ -178,49 +193,49 @@ main h2 {
 }
 
 /* Sobre */
-#sobre{
+#sobre {
     padding: 50px 0px;
     background: url(img/background.png);
     background-size: cover;
     background-position: center;
 }
 
-#destaqueSobre{
+#destaqueSobre {
     display: none;
 }
 
-#textoSobre{
+#textoSobre {
     color: #fff;
     padding: 0px 10px;
 }
 
-#textoSobre h2{
+#textoSobre h2 {
     margin-bottom: 10px;
 }
 
-.TopicosSobre{
+.TopicosSobre {
     margin-top: 20px;
 }
 
-.TopicosSobre img{
+.TopicosSobre img {
     margin-right: 10px;
 }
 
 /* One page */
-#onepage{
+#onepage {
     padding: 50px 10px;
 }
 
-#onepage h2{
+#onepage h2 {
     margin-bottom: 10px;
 }
 
-#onepage p{
+#onepage p {
     margin-bottom: 25px;
 }
 
 /* https://www.digitalrebellion.com/webapps/aspectcalc?calc=height&cbo_aspect=a178&res_w2=560 */
-#video iframe{
+#video iframe {
     width: 340px;
     height: 191px;
     border: 0;
@@ -228,54 +243,95 @@ main h2 {
 }
 
 /* Wireframe */
-#wireframe{
+#wireframe {
     padding: 50px 10px;
     background: url(img/background.png);
     background-size: cover;
     background-position: center;
 }
 
-#textoWire{
+#textoWire {
     color: #fff;
     padding: 0px 10px;
 }
 
-#textoWire h2{
+#textoWire h2 {
     margin-bottom: 10px;
 }
 
-#textoWire p{
+#textoWire p {
     margin-bottom: 40px;
 }
 
-#textoWire span{
+#textoWire span {
     display: none;
 }
 
-#qrcode{
+#qrcode {
     display: none;
 }
 
 /* Conteúdo */
-#conteudo{
+#conteudo {
     padding: 50px 0px;
 }
 
-#conteudo h2{
+#conteudo h2 {
     margin-bottom: 25px;
     text-align: center;
 }
 
-#todos{
+#todos {
     margin-top: 50px;
     text-align: center;
 }
 
-#todos a{
+#todos a {
     text-decoration: none;
     color: #000;
     font-weight: 700;
     font-size: 1.25em;
+}
+
+/* rodapé */
+address {
+    padding: 35px 10px 50px 10px;
+    background: url(img/background2.png);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+address a {
+    text-decoration: none;
+    color: #fff;
+}
+
+address img {
+    padding-top: 15px;
+}
+
+#iconeLocal {
+    display: none;
+}
+
+#dados {
+    margin: 30px 0px 15px 0px;
+}
+
+#googleMaps {
+    display: none;
+}
+
+footer {
+    padding: 50px;
+    background-color: #343538;
+    color: #fff;
+    text-align: center;
+}
+
+#social {
+    margin-bottom: 25px;
 }
 
 /* Smartphone Landscape >>>>>>>>>>*/
@@ -287,15 +343,28 @@ main h2 {
     }
 
     /* Destaque */
-    main h1, main h2{
+    main h1,
+    main h2 {
         text-shadow: #000 0.05em 0.05em 0.05em;
     }
 
     /* One page */
-    #video iframe{
+    #video iframe {
         width: 560px;
-        height:315px;
-    
+        height: 315px;
+
+    }
+
+    /* Rodapé */
+    .Flex5 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #social {
+        margin: 0;
     }
 }
 
@@ -308,16 +377,16 @@ main h2 {
     }
 
     /* Destaque */
-    main{
+    main {
         height: 45vh;
     }
 
-    main h1{
+    main h1 {
         font-size: 5.5em;
 
     }
 
-    main h2{
+    main h2 {
         font-size: 2em;
     }
 }
@@ -331,7 +400,7 @@ main h2 {
     }
 
     /* Destaque */
-    main{
+    main {
         height: 70vh;
     }
 }
@@ -382,42 +451,62 @@ main h2 {
     }
 
     /* Sobre */
-    #sobre{
-        background-attachment: fixed; /* efeito de rolagem back */
+    #sobre {
+        background-attachment: fixed;
+        /* efeito de rolagem back */
     }
 
-    #destaqueSobre{
-        display: inline; /* Aparece em pc*/
+    #destaqueSobre {
+        display: inline;
+        /* Aparece em pc*/
 
     }
 
-    #destaqueSobre img{
-        border-radius: 50%; /* a img deve ser quadrada */
+    #destaqueSobre img {
+        border-radius: 50%;
+        /* a img deve ser quadrada */
         margin-right: 50px;
     }
 
     /* One page */
-    .Flex3{
+    .Flex3 {
         flex-direction: row;
         align-items: center;
     }
 
     /* Wireframe */
-    #wireframe{
+    #wireframe {
         background-attachment: fixed;
     }
 
-    #textoWire span{
-        display: inline;
-    }
-    
-    #qrcode{
+    #textoWire span {
         display: inline;
     }
 
-    #qrcode img{
+    #qrcode {
+        display: inline;
+    }
+
+    #qrcode img {
         width: 225px;
         height: 225px;
+    }
+
+    /* Rodapé */
+    #iconeLocal {
+        display: inline;
+    }
+
+    #iconeMapa {
+        display: none;
+    }
+
+    #googleMaps{
+        display: inline;
+    }
+    
+    .Flex6{
+        flex-direction: row-reverse;
     }
 
 }
