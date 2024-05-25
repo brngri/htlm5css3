@@ -8,7 +8,21 @@
 /* importação (Google fonts) */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+
+/* CSS Reset */
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth; /* efeito rolagem suave */
+}
+
 /* Topo do site */
+
+
 #topo {
     position: fixed;
     right: 10px;
@@ -102,12 +116,6 @@ body {
     border: 0;
 }
 
-/* CSS Reset */
-* {
-    margin: 0;
-    border: 0;
-    padding: 0;
-}
 
 /* Smartphone Portrait >>>>>>>>>>>*/
 
