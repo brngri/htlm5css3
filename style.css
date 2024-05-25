@@ -146,7 +146,7 @@ label {
 nav ul {
     list-style: none;
     /*tira o estilo*/
-    background-color: #343538;
+    background-color: rgba(52, 53,56, 0.80);
     height: 100vh;
     position: fixed;
     padding-right: 15px;
